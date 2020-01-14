@@ -1,2 +1,3 @@
-MY FIRST WEBSITE
-Practical Work
+# My First Practical
+
+This is a sample README file
