@@ -1,13 +1,249 @@
+<!-- 
+In order to validate your HTML code, click on the arrow at the top right of this window. If you have some problems with validation, you can have a look here  : https://blog.codepen.io/2017/10/11/analyze-css-now-using-stylelint/ 
+-->
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>My App</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Amatic+SC:400,700&display=swap&subset=cyrillic"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Wild Circus</title>
   </head>
+
   <body>
-    <h1>My App</h1>
-    <p>Testing out Github the first time</p>
+    <header class="header">
+      <h1>Wild Circus</h1>
+      <nav>
+        <ul>
+          <!-- TODO: every menu link drive us to the specific section -->
+          <li><a href="#performance">Performances</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#prices">Prices</a></li>
+
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="hero-text">
+        <h2>
+          <span class="heading-primary">Wild Circus</span>
+          <span class="heading-sub">Renowned Circus Company</span>
+        </h2>
+        <a href="#" class="btn">
+          Sign Up Now!
+        </a>
+      </div>
+    </header>
+
+    <section>
+      <h2 class="section-1" id="performance">Performances</h2>
+      <!-- TODO: With your CSS, put the three performances here  ("lough", "dream, "marvel at") on the same line, without the generated dot. Becareful, only use the CSS in order to align everything, you must not remove the <li> tags.-->
+      <ul>
+        <!-- performance 1 -->
+        <li>
+          <h3>Laugh</h3>
+          <p>
+            As an adult, come and discover our irresistible clowns, between
+            practical jokes and pranks let yourself be carried away by their joy
+            and fall back into childhood.
+          </p>
+        </li>
+        <!-- performance 2 -->
+        <li>
+          <h3>Dream</h3>
+          <p>
+            Let yourself be carried away in a world where the real and the
+            imaginary are one, in the company of our talented magicians,
+            discover a wonderful world limited only by your imagination.
+          </p>
+        </li>
+        <!-- performance 3 -->
+        <li>
+          <h3>Marvel at</h3>
+          <p>
+            Tame the untameable in the company of our tamers, between roar and
+            razor-sharp claws, watch these fierce felines turn into sweet
+            kittens.
+          </p>
+        </li>
+      </ul>
+    </section>
+
+    <hr />
+
+    <section class="about">
+      <h2 id="about">About Us</h2>
+      <ul>
+        <!-- performance 1 -->
+        <li>
+          <img
+            class="about-image"
+            src="https://images.unsplash.com/photo-1435034568314-8303dbda4b8c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80"
+            alt="about us"
+          />
+          <!-- performance 2 -->
+        </li>
+
+        <li>
+          <h3>What We Do</h3>
+          <p>
+            Let yourself be carried away in a world where the real and the
+            imaginary are one, in the company of our talented magicians,
+            discover a wonderful world limited only by your imagination. Let
+            yourself be carried away in a world where the real and the imaginary
+            are one, in the company of our talented magicians, discover a
+            wonderful world limited only by your imagination. away in a world
+            where the real and the imaginary are one, in the company of our
+            talented magicians, discover a wonderful world limited only by your
+            imagination. <br />
+            <br /><br />
+
+            <a href="#" class="btn">
+              Learn More
+            </a>
+          </p>
+        </li>
+      </ul>
+    </section>
+
+    <hr />
+    <h2 class="pricing-head" id="prices">PRICING</h2>
+
+    <div class="pricing-table">
+      <div class="col">
+        <div class="table">
+          <h2>Adult</h2>
+          <div class="price">
+            $20
+            <span>Per Person</span>
+          </div>
+          <ul>
+            <li><strong>Free</strong>VIP Lounge</li>
+            <li><strong>4</strong>Meal Tickets</li>
+            <li><strong>4</strong>Boat Cruise</li>
+            <li><strong>2</strong>Gift Pack</li>
+          </ul>
+          <a href="#">Buy Now</a>
+        </div>
+      </div>
+      <div class="col">
+        <div class="table">
+          <h2>Children U-12</h2>
+          <div class="price">
+            $10
+            <span>Per Person</span>
+          </div>
+          <ul>
+            <li><strong>Free</strong>VIP Lounge</li>
+            <li><strong>4</strong>Meal Tickets</li>
+            <li><strong>4</strong>Boat Cruise</li>
+            <li><strong>2</strong>Gift Pack</li>
+          </ul>
+          <a href="#">Buy Now</a>
+        </div>
+      </div>
+      <div class="col">
+        <div class="table">
+          <h2>School Children</h2>
+          <div class="price">
+            $20
+            <span>Per Month</span>
+          </div>
+          <ul>
+            <li><strong>Free</strong>VIP Lounge</li>
+            <li><strong>4</strong>Meal Tickets</li>
+            <li><strong>4</strong>Boat Cruise</li>
+            <li><strong>2</strong>Gift Pack</li>
+          </ul>
+          <a href="#">Buy Now</a>
+        </div>
+      </div>
+      <div class="col">
+        <div class="table">
+          <h2>Group</h2>
+          <div class="price">
+            $20
+            <span>Per Month</span>
+          </div>
+          <ul>
+            <li><strong>Free</strong>VIP Lounge</li>
+            <li><strong>4</strong>Meal Tickets</li>
+            <li><strong>4</strong>Boat Cruise</li>
+            <li><strong>2</strong>Gift Pack</li>
+          </ul>
+          <a href="#">Buy Now</a>
+        </div>
+      </div>
+    </div>
+
+    <hr />
+    <section class="form-background">
+      <div class="title">
+        <h2 id="contact">Contact Us</h2>
+        <h3>We Are Here To Help</h3>
+        <div class="box">
+          <form>
+            <input
+              type="text"
+              name="name"
+              class="form-control"
+              placeholder="Enter Your Name"
+              required
+            />
+            <br />
+            <input
+              type="email"
+              name="email"
+              class="form-control"
+              placeholder="Enter Your Email"
+              required
+            />
+            <br />
+            <textarea
+              name="message"
+              class="form-control"
+              placeholder="Message"
+              rows="4"
+              required
+            ></textarea
+            ><br />
+            <input
+              type="submit"
+              name="submit"
+              class="form-control submit"
+              value="SEND MESSAGE"
+            />
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <!-- TODO: Add your last name and first name.
+        Place the link pointing on the Wild Code School website (https://wildcodeschool.com).
+        You can also add the link to your own website, blog or Github profile. 
+       -->
+      <div class="wrapper">
+        <nav>
+          <ul>
+            <!-- TODO: every menu link drive us to the specific section -->
+            <li><a href="#">Performances</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+
+        <p>
+          Wild Circus by: Isaac Rabiu - Codecademy:
+          <a href="https://www.codecademy.com/">www.codeacademy.com</a> -
+          SoloLearn:
+          <a href="https://odyssey.wildcodeschool.com/users/18088">IsaacR</a> -
+          Wild Code School - &copy; 2020 Alright Reserved
+        </p>
+      </div>
+    </footer>
   </body>
 </html>
